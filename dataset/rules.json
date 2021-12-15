@@ -1,0 +1,308 @@
+{"intents": [
+    {
+      "intent": "accountbalance",
+      "examples": [
+        {
+          "text": "account balance"
+        },
+        {
+          "text": "balance in my account"
+        },
+        {
+          "text": "what is my account balance"
+        },
+        {
+          "text": "whats the balance on my account"
+        },
+        {
+          "text": "want to check my acct bal"
+        },
+        {
+          "text": "credit card balance"
+        },
+        {
+          "text": "list down my accounts"
+        },
+        {
+          "text": "show all the accounts"
+        },
+        {
+          "text": "account bal"
+        }
+      ]
+    },
+    {
+      "intent": "register",
+      "examples": [
+        {
+          "text": "how can i register myself"
+        },
+        {
+          "text": "what is the registration process"
+        },
+        {
+          "text": "start a relationship"
+        },
+        {
+          "text": "looking to open an account"
+        },
+        {
+          "text": "how can i apply"
+        },
+        {
+          "text": "how to open an account"
+        },
+        {
+          "text": "how to register"
+        },
+        {
+          "text": "i want to apply"
+        },
+        {
+          "text": "i want to register"
+        },
+        {
+          "text": "i want to sign up"
+        },
+        {
+          "text": "can you help me with the process to register"
+        }
+      ]
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Hi how are you"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Howdy"
+        },
+        {
+          "text": "how are you"
+        }
+      ]
+    },
+    {
+      "intent": "discoTerms",
+      "examples": [
+        {
+          "text": "Why I am not able to select loan amount below 25000?"
+        },
+        {
+          "text": "Can FATCA status be updated later?"
+        },
+        {
+          "text": "My mobile camera not working . What to do?"
+        },
+        {
+          "text": "What happens if there is a spelling mistake in my name printed on Adhaar card?"
+        },
+        {
+          "text": "Is the Interest rate  fixed or floating?"
+        },
+        {
+          "text": "If I Pay some Lumpsum amout ,will my EMI reduce?"
+        },
+        {
+          "text": "Can I select my EMI amount?"
+        },
+        {
+          "text": "I have not received any letter asking my confirmation"
+        },
+        {
+          "text": "Why I am not able to select loan tenure below 6 month?"
+        },
+        {
+          "text": "Which Branch do I have to go for signing the documents?"
+        },
+        {
+          "text": "What if I want loan for higher amount and longer duration?"
+        },
+        {
+          "text": "Can I enter a mobile number other than the one used for downloading the app."
+        },
+        {
+          "text": "Can I get credit of loan amount in Account other than mentioned on the  screen"
+        },
+        {
+          "text": "Can I avail 2 Pre-approved Loans"
+        }
+      ]
+    },
+    {
+      "intent": "FundTransfer",
+      "examples": [
+        {
+          "text": "fund transfer"
+        },
+        {
+          "text": "want to transfer money"
+        },
+        {
+          "text": "I want to transfer funds"
+        },
+        {
+          "text": "P2P fund transfer"
+        }
+      ]
+    },
+    {
+      "intent": "representative",
+      "examples": [
+        {
+          "text": "representative"
+        },
+        {
+          "text": "speak to someone"
+        },
+        {
+          "text": "speak to a representative"
+        },
+        {
+          "text": "i need help"
+        },
+        {
+          "text": "can i speak to someone"
+        }
+      ]
+    },
+    {
+      "intent": "LostCard",
+      "examples": [
+        {
+          "text": "card is lost"
+        },
+        {
+          "text": "need to block my card"
+        },
+        {
+          "text": "could you block my card"
+        },
+        {
+          "text": "freeze my card"
+        },
+        {
+          "text": "loss of my card"
+        },
+        {
+          "text": "lost my card"
+        },
+        {
+          "text": "my card is stolen"
+        }
+      ]
+    },
+    {
+      "intent": "Forgotpassword",
+      "examples": [
+        {
+          "text": "I forgot my password"
+        },
+        {
+          "text": "i dont remember my password"
+        },
+        {
+          "text": "can you help with password reset"
+        },
+        {
+          "text": "i need to reset password"
+        },
+        {
+          "text": "how can i reset my password"
+        }
+      ]
+    },
+    {
+      "intent": "OK",
+      "examples": [
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thanks a lot"
+        },
+        {
+          "text": "thanks for your support"
+        },
+        {
+          "text": "cool"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "Thank you"
+        },
+        {
+          "text": "that is fine"
+        },
+        {
+          "text": "that was all"
+        },
+        {
+          "text": "thx"
+        },
+        {
+          "text": "okie"
+        },
+        {
+          "text": "okay"
+        },
+        {
+          "text": "tx"
+        },
+        {
+          "text": "ok"
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "intent": "accountbalance",
+      "output": "The account balance is"
+    },
+    {
+      "intent":"register",
+      "output": "Go to xxx and follow steps "
+    },
+    {
+      "intent": "Greetings",
+      "output": "Hello how may I help you"
+    },
+    {
+      "intent": "discoTerms",
+      "output": "Go to xxx."
+    },
+    {
+      "intent": "FundTransfer",
+      "-1": "Successful Transfer",
+      "0": "Insufficient funds",
+      "1": "Beneficiary does not exist"
+    },
+    {
+      "intent": "representative",
+      "output": "Go to xx"
+    },
+    {
+      "intent": "LostCard",
+      "output": "card deactivated"
+    },
+    {
+      "intent": "Forgotpassword",
+      "output": "Go to xxx and follow instructions"
+    },
+    {
+      "intent": "OK",
+      "output": "welcome"
+    }
+
+  ]
+}
