@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 import chat_bot_functions as cbf
 import variables as v
-
 v.i = 0
 v.intent = ""
 v.output_type = -2
@@ -82,11 +81,12 @@ def get_bot_response():
                 output, v.output_type = cbf.fund_transfer()
                 return output
             else:
-                bef_id, amount = request.args.get('msg')
+                bef_id, amount = request.args.get('msg').split()
                 bef_id = int(bef_id)
                 amount = int(amount)
                 o = cbf.fund_transfer(v.cust_id, bef_id, amount)
                 if o == -1:
+                    v.i = -1
                     return "Fund Transfer Sucesfull"
                 elif o == 0:
                     v.i = -1
@@ -100,4 +100,4 @@ def get_bot_response():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

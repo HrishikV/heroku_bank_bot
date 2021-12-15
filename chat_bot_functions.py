@@ -39,7 +39,7 @@ def fund_transfer(cust_id=None, bef_id=None, amount=None):
     if bef_id is None and amount is None:
         return "enter Beneficiary id and amount",1
     else:
-        return get_output("FundTransfer", bbf.acc_transfer(cust_id, bef_id, amount))
+        return bbf.acc_transfer(cust_id, bef_id, amount)
 
 
 def credit_use(cust_id, amount=None):
