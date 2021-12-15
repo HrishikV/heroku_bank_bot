@@ -16,6 +16,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    v.i = 0
+    v.intent = ""
+    v.output_type = -2
+    v.cust_id = None
+    v.check = False
+    v.c = 0
     return render_template("index.html")
 
 @app.before_request
