@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import chat_bot_functions as cbf
 import variables as v
+
 v.i = 0
 v.intent = ""
 v.output_type = -2
